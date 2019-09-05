@@ -1,0 +1,20 @@
+#use def function to delete attributes of an object and an object itself
+class Person:
+  def __init__(self,name,age): #constructor
+   self.name=name; #self stores the current object value
+    self.age=age;
+
+#two objects s1 and s2 are created.The __init__ constructor is automatically called
+
+p1=Person("Suppandi",14)
+
+print("\n The name of the person #1 is",p1.name) #dot opt to retrieve the values
+print("\n The age of the person #1 is",p1.age)
+
+print('printing after deleting age attribute for p1')
+del p1.age #deleting the age attribute of p1 object
+print("\n The name of the person #1 is",p1.name)
+#print("\n The age of the person #1 is",p1.age)
+#this line will give error
+del p1
+print("\n The name of the person #1 is",p1.name)
