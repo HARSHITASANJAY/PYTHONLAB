@@ -1,0 +1,6 @@
+#Create a tuple with numbers
+tuplex = 1, 2, 3, 4, 5
+print(tuple1)
+#Create a tuple of one item
+tuple1 = 5,
+print(tuple1)
