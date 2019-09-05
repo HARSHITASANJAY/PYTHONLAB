@@ -1,0 +1,12 @@
+my_list = ['geeks', 'for', 'geeks']
+another_list = ('6', '0', '4','1' )
+list1="good food good mood"
+print(my_list)
+my_list.append(another_list)
+print(my_list)
+print(my_list[1:])
+print(another_list[::])
+my_list[1:1]='b'
+print(my_list)
+print(list1[::2])
+print(list1.replace('food',"strawberrys"))
