@@ -1,0 +1,20 @@
+#use of self.it is the first argument passed to any function
+
+class Person:
+def __init__(self,name,age): #constructor
+self.name=name; #self stores the current object value
+self.age=age;
+
+#two objects s1 and s2 are created.The __init__ constructor is automatically called
+
+p1=Person("Suppandi",14)
+p2=Person("ramu",12)
+
+print("\n The name of the person #1 is",p1.name) #dot opt to retrieve the values
+print("\n The age of the person #1 is",p1.age)
+
+
+print("\n The name of the person #2 is",p2.name)
+print("\n The age of the person #2 is",p2.age)
+p2.age =10
+print("the modified age is",p2.age)
