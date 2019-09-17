@@ -1,0 +1,21 @@
+def Celsius_to_Fahrenheit(num1) :
+    return ((9/5)*num1 + 32)
+# Define a function to convert
+def Fahrenheit_to_Celsius(num2) :
+    return ((5/9)*(num2-32))
+def menu():
+
+    print("Select operation")
+print("From C to F")
+print("From F to C")
+
+choice=input("ENter choice")
+
+if choice=='1':
+    num1=float(input("Enter in celsius"))
+    print('The temperature in Fahrenheit is',Celsius_to_Fahrenheit(num1))
+elif choice=='2':
+    num2=float(input("Enter in Fahrenheit"))
+    print('The temperature in Celsius is',Fahrenheit_to_Celsius(num2))
+else:    
+    print("invalid")
