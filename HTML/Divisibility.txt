@@ -1,0 +1,23 @@
+<html>
+<head>
+   <title>Javascript program to check divisibility of a number</title>
+    <script type="text/javascript" src="divisible.js"></script>
+</head>
+<body>
+	function divisibleby37() {
+    var x = document.getElementById('firstnumber').value
+    if ((x % 7 == 0) && (x % 3 == 0))
+        var res = "Divisible"
+    else
+        var res = "Not divisible"
+    document.getElementById('result').innerHTML = res
+}
+    <form>
+        1st Number : <input type="number" id="firstnumber"><br>
+        <input type="button" onclick="divisibleby37()" id="checking" value="Check"><br>
+    </form>
+    <p>Divisibility: <br>
+    <span id="result"></span>
+    </p>
+</body>
+</html>
